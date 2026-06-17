@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "nova-study-coach"
-version = "0.1.0"
-description = "Nova, a local CLI study and project coach."
+version = "0.2.0"
+description = "Nova, a local CLI and web study coach."
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = []
@@ -17,9 +17,13 @@ dev = [
 
 [project.scripts]
 nova = "nova.cli:main"
+nova-web = "nova.web:main"
 
 [tool.setuptools.packages.find]
 include = ["nova*"]
+
+[tool.setuptools.package-data]
+nova = ["web_static/*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nova Study Coach</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="workspace" aria-label="Nova coach">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Nova v0.2</p>
+            <h1>Study Coach</h1>
+          </div>
+          <div class="status" id="status">Local</div>
+        </header>
+
+        <section class="memory-grid" aria-label="Remembered context">
+          <div class="memory-item">
+            <span>Goal</span>
+            <strong id="memory-goal">Not set</strong>
+          </div>
+          <div class="memory-item">
+            <span>Time Today</span>
+            <strong id="memory-time">Not set</strong>
+          </div>
+          <div class="memory-item wide">
+            <span>Last Task</span>
+            <strong id="memory-task">Not set</strong>
+          </div>
+          <div class="memory-item wide">
+            <span>Recent Progress</span>
+            <strong id="memory-progress">No recent progress</strong>
+          </div>
+        </section>
+
+        <section class="conversation" id="conversation" aria-live="polite"></section>
+
+        <form class="composer" id="composer">
+          <label class="sr-only" for="message">Message</label>
+          <input
+            id="message"
+            name="message"
+            autocomplete="off"
+            placeholder="Tell Nova what you want to work on..."
+          />
+          <button id="send" type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

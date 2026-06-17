@@ -5,3 +5,5 @@ __pycache__/
 
 data/nova_memory.json
 nova/data/nova_memory.json
+nova-web.log
+nova-web.err.log

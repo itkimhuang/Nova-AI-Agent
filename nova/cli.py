@@ -11,7 +11,7 @@ EXIT_COMMANDS = {"exit", "quit", "q"}
 
 def run(memory_path: Path = DEFAULT_MEMORY_PATH) -> None:
     memory = load_memory(memory_path)
-    print("Nova v0.1 - local study coach")
+    print("Nova v0.2 - local study coach")
     print("Type a message, or 'exit' to leave.")
 
     while True:

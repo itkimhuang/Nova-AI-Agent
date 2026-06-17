@@ -1,22 +1,24 @@
-# Nova Study Coach v0.1
+# Nova Study Coach v0.2
 
-Nova is a small local CLI study and project coach. It accepts typed messages, suggests one main task for today, offers one optional task, gives one practical tip, and stores lightweight progress in a local JSON file.
+Nova is a small local study and project coach. It accepts typed messages, suggests one main task for today, offers one optional task, gives one practical tip, and stores lightweight progress in a local JSON file.
 
-## What v0.1 includes
+## What v0.2 includes
 - Local command-line interface
+- Local browser web UI
 - Python coach backend
 - Local JSON memory in `data/nova_memory.json`
 - Study and side-project planning support
 - Beginner-friendly deterministic behavior
 
-## What v0.1 does not include
-- Web UI
+## What v0.2 does not include
+- AI model integration
 - Database
 - Cloud deployment
+- User accounts
 - Voice input
 - Required voice output
 
-## Run locally
+## Run the CLI
 ```bash
 python -m nova.cli
 ```
@@ -33,6 +35,16 @@ Plan my project process.
 Exit with:
 ```text
 exit
+```
+
+## Run the local web UI
+```bash
+python -m nova.web
+```
+
+Then open:
+```text
+http://127.0.0.1:8765
 ```
 
 ## Run tests
